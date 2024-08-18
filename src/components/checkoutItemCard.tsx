@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 
 
 export default function CheckoutItemCard({ product }: { product: CartItem }) {
-    const { removeItemFromCart, deleteItemFromCart, addItemToCart } = useStore()
+    const { removeItemFromCart, deleteItemFromCart, addItemToCart,setAlert } = useStore()
 
     function handleRemoveCartItem() {
         removeItemFromCart(product.id)
@@ -15,6 +15,7 @@ export default function CheckoutItemCard({ product }: { product: CartItem }) {
     }
     function handleDeleteCartItem() {
         deleteItemFromCart(product.id)
+        setAlert({message:`removed ${product.title} from cart`})
     }
 
     const { image, price, title, qty } = product

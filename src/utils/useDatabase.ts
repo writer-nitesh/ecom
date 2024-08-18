@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const useDatabase = (path: string) => {
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [data, setData] = useState<any>(null);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<any>(null);
 
     useEffect(() => {
         const fetchData = async () => {

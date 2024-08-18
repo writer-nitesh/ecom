@@ -34,7 +34,7 @@ const Alert: React.FC<AlertProps> = ({ message, type = 'info' }) => {
     return (
         <div className={`absolute flex items-center top-10 w-full justify-center z-20`}>
             <div className={`${baseStyles} ${typeStyles[type]} w-96 capitalize`}>
-                <span className="flex-1">{message}</span>
+                <span className="flex-1 text-xs">{message}</span>
                 {alert && (
                     <button
                         onClick={handleClose}
