@@ -5,15 +5,15 @@ import AddToCart from "../cart/addToCart";
 
 export default function Card({ product }: { product: Product }) {
 
-    const { image, price, title } = product
+    const { image, price, title, id } = product
 
     return (
-        <Link href={"/"} className="group relative shadow-md rounded-md p-2">
+        <Link href={`/products/${id}`} className="group relative shadow-md rounded-md p-2">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
                     alt={title}
                     src={image}
-                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    className="h-full w-full object-contain object-center lg:h-full lg:w-full"
                 />
             </div>
             <div className="mt-4 gap-2 flex justify-between">

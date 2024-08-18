@@ -26,7 +26,7 @@ export default function Checkout() {
       <div className="flex flex-col gap-2">
         {
           cart.length != 0 && cart.map((item) => {
-            return <CheckoutItemCard product={item} />
+            return <CheckoutItemCard key={item.id} product={item} />
           })
         }
       </div>

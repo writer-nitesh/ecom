@@ -68,7 +68,7 @@ export default function Cart() {
                         {/* Show When Cart is Empty */}
 
                         {
-                            cart.length == 0 && <span className='text-sm capitalize text-center py-4'>no items in cart</span>
+                            cart.length == 0 && <span className='text-sm capitalize text-center py-4 lg:w-96 w-48'>no items in cart</span>
 
                         }
 

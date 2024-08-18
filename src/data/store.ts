@@ -7,7 +7,7 @@ const useStore = create<State & Actions>((set) => ({
     user: false,
     cart: [],
     alert: null,
-
+    
     addItemToCart: (product) => set((state) => {
         // Check if the product is already in the cart
         const existingProductIndex = state.cart.findIndex((item) => item.id === product.id);
@@ -57,7 +57,6 @@ const useStore = create<State & Actions>((set) => ({
         // If the item does not exist, return the cart unchanged
         return { cart: state.cart };
     }),
-
 
     loginUser: () => set({ user: true }),
     setAlert: (data) => set({ alert: data })
