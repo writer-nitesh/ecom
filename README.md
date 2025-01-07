@@ -12,3 +12,11 @@ ECOM  is an e-commerce shopping website built with nextjs
 - Fake Store API
 - Zustand (State Management)
 - React Icons
+
+## Screenshots
+
+![ss1](/images/ecom_1.png)
+![ss1](/images/ecom_2.png)
+![ss1](/images/ecom_3.png)
+![ss1](/images/ecom_4.png)
+![ss1](/images/ecom_5.png)
